@@ -1,0 +1,368 @@
+body{
+  font-family: "Barlow", serif;
+  background-color: #EDF8F9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 64px;
+  text-align: center;
+  color: #2E5070;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  background-color: white;
+  width: 100%;    
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+ 
+}
+
+.kiri{
+  width: 155px;
+  height: 58px;
+}
+
+.kanan{
+  color: #2E5070;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding-right: 40px;
+
+  a{
+      text-decoration: none;
+      color: #2E5070;
+      font-weight: 600;
+  }
+ 
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  
+}
+
+.hero-kiri {
+  display: flex;
+  flex-direction: column;
+
+  h1{
+      font-size: 56px;
+      color: #2E5070;
+      font-weight: 600;
+  }
+
+  p {
+      font-size: 20px;
+      color: #2E5070;
+      font-weight: 400px;
+  }
+  
+  img {
+      width: 200px;
+  }
+}
+
+.hero-kanan {
+  position: relative;
+
+  img:nth-child(1) {
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+  }
+
+  img:nth-child(2){
+      width: 543px;
+      transform: translateX(-10px);
+  }
+
+  img:nth-child(3) {
+
+      position: absolute;
+      left: 350px;
+      bottom: -60px;
+  }
+
+}
+
+.services {
+  background-color: #C6EAE3;
+  padding: 128px 40px;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+
+}
+
+.card-pict {
+  width: 100%;
+  height: auto;
+}
+
+.klinik, .daycare, .adopsi {
+
+  flex: 1;
+  width: 100%;
+  background-color: white;
+  width: fit-content;
+  border-radius: 44px;
+  padding: 16px;
+  
+
+  h3 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #2E5070;
+  }
+
+  p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #2E5070;
+      font-weight: 300;
+  }
+
+}
+
+button{
+  background-color: #95BB6F;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 200px;
+  padding: 24px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.judul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+
+  h2 {
+      text-align: start;
+  }
+
+  p {
+      font-weight: 400px;
+      font-size: 20px;
+  }
+
+  img {
+      width: 200px;
+
+      display: flex;
+      flex: 1;
+      align-items: start;
+      transform: translateX(-75px);
+  }
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  
+
+  img, p {
+      flex: 1;
+      width: 100%;
+  }
+
+  p {
+      font-weight: 300;
+      font-size: 20px;
+  }
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding-top: 80px;
+
+  p{
+      font-weight: 400;
+      font-size: 20px;
+  }
+}
+
+.map{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  padding: 120px 40px;
+  background-image: url("/img/bg-img.png");
+  background-size: cover;
+  background-position:  center;
+
+}
+
+
+
+.left{
+  background-color: white;
+  border-radius: 18px;
+  padding: 32px;
+  gap: 20px;
+  color: #2E5070;
+
+
+  h3{
+      font-size: 32px;
+      font-weight: 600;
+  }
+
+  h4{
+      font-size: 18px;
+      font-weight: 700;
+  }
+
+  p{
+      font-size: 18px;
+      font-weight: 400;
+  }
+
+}
+
+.garis{
+  width: 428px;
+  height: 2px;
+  background-color: #C6EAE3;
+}
+
+.right{
+  background-color: white;
+  width: 492px;
+  border-radius: 18px;
+  padding: 32px;
+  gap: 20px;
+  color: #2E5070;
+
+
+  img {
+      width: 428px;
+      height: 320px;
+  }
+}
+.testimoni {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 100px 40px;
+
+}
+
+.test-1{
+  background-color: white;
+  width: 451px;
+  border-radius: 18px;
+  padding: 32px;
+  gap: 20px;
+  color: #2E5070;
+  
+}
+
+footer{
+  background-color: #2E5070;
+  background-image: url(/images/Paw\ Pattern.png);
+
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 40px;
+  gap: 32px;
+
+  h4 {
+      color: #C6EAE3;
+  }
+
+  p {
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      max-width: 250px;
+  }
+}
+
+.logo-footer {
+  object-fit: cover;
+  width: 300px;
+  height: 113px;
+}
+
+
+
+.medsos {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+}
+
+.garis-footer {
+  width: 1430px;
+  height: 1px;
+  margin: auto;
+  background-color: #C6EAE3;
+}
+
+.foot-4  {
+
+  p {
+      color: white;
+      width: 1430px;
+      margin: auto;
+      padding: 30px;
+  }
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}

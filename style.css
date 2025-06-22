@@ -5,6 +5,10 @@ body{
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
   font-size: 64px;
   text-align: center;
@@ -31,8 +35,8 @@ nav{
   height: 58px;
 }
 
-.kanan{
-  color: #2E5070;
+.kanan:hover {
+  color: #4981b6;
 }
 
 ul{
@@ -363,7 +367,15 @@ footer{
   }
 }
 
-a{
+.main-links {
+  a{
   color: white;
-  text-decoration: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+}
+
+a:hover {
+  color: rgb(199, 199, 199);
 }
